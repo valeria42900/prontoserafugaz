@@ -86,7 +86,7 @@
      width: 50%;
      height: 100%;
      overflow-y: scroll;
-     border-right: 2px solid;
+     border-right: 1px solid;
      color: rgb(0, 0, 0);
 
    }
@@ -94,8 +94,7 @@
    .book-right {
      max-width: 50%;
      height: 100%;
-
-     overflow-y: scroll;
+overflow-y: scroll;
      color: rgb(0, 0, 0);
    }
 
@@ -148,6 +147,11 @@ padding: 25px 50px 75px 50px;
 }
 
 .salar {
+padding: 25px 50px 75px 50px;
+
+}
+
+.translate {
 padding: 25px 50px 75px 50px;
 
 }
