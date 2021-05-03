@@ -1,0 +1,52 @@
+
+body {
+  background-image: url('stills/moon.gif');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+}
+
+h1 {
+text-align: center;
+color: rgb(213, 187, 166);
+font-family: monospace;
+
+}
+
+body::-webkit-scrollbar {
+      display: none;
+    }
+
+.randomp {
+    /* grid-area: 1 / 4; */
+    z-index: 1;
+    width:200px;
+    height:20%;
+    position: fixed;
+    z-index: 9;
+    border-radius: 3%;
+}
+
+
+img {
+    width: 100%;
+}
+
+.i14 {
+  width: 
+}
+
+.randomp:hover {
+    -webkit-animation: disappear 0.5s ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: both;
+}
+
+@-webkit-keyframes disappear{
+    0% {opacity: 1}
+    100% { opacity: 0}
+}
+
+
+.

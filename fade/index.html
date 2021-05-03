@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>pronto ser&aacute;  fugaz</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="favicon.png" href="favicon.png"/>
+<link rel="stylesheet" href="main.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<style>
+</style>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <script>
+  $( function() {
+    $( ".draggable" ).draggable();
+  } );
+  </script>
+
+
+</head>
+<body>
+
+<h1> till I feel Whole again <p>
+</h1>
+
+
+<img class="draggable randomp i1" src="stills/acerola.png">
+
+<img class="draggable randomp i2" src="stills/backinboli.png">
+
+<img class="draggable randomp i3" src="stills/chair.png">
+
+<img class="draggable randomp i4" src="stills/church.png">
+
+<img class="draggable randomp i5" src="stills/cotoca1.png">
+
+<img class="draggable randomp i6" src="stills/cuevas.png">
+
+<img class="draggable randomp i7" src="stills/familiar.png">
+
+<img class="draggable randomp i8" src="stills/frame.png">
+
+<img class="draggable randomp i9" src="stills/framed.png">
+
+<img class="draggable randomp i10" src="stills/gmasleeping.png">
+
+<img class="draggable randomp i11" src="stills/greenland.png">
+
+<img class="draggable randomp i12" src="stills/horseland.png">
+
+<img class="draggable randomp i13" src="stills/island.png">
+
+<img class="draggable randomp i14" src="stills/island2.png">
+
+<img class="draggable randomp i15" src="stills/island3.png">
+
+<img class="draggable randomp i16" src="stills/island4.png">
+
+<img class="draggable randomp i17" src="stills/livingroom1.png">
+
+<script>
+
+function randomPosition(myclass){
+  var randomW = Math.floor(80*Math.random());
+  var randomH = Math.floor(80*Math.random());
+  $(myclass).css({'top' : randomH + '%'});
+  $(myclass).css({'left' : randomW + '%'});
+};
+
+
+$(document).ready(function(){
+    randomPosition('.i1');
+    randomPosition('.i2');
+    randomPosition('.i3');
+    randomPosition('.i4');
+    randomPosition('.i5');
+    randomPosition('.i6');
+    randomPosition('.i7');
+    randomPosition('.i8');
+    randomPosition('.i9');
+    randomPosition('.i10');
+    randomPosition('.i11');
+    randomPosition('.i12');
+    randomPosition('.i13');
+    randomPosition('.i14');
+    randomPosition('.i15');
+    randomPosition('.i16');
+    randomPosition('.i17');
+});
+
+
+</script>
+
+
+
+<a class="navlist" href="../index.html">&#10232;</a>
+
+
+</body>
+</html>

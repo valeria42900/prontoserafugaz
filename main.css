@@ -1,82 +1,169 @@
-* {
-  box-sizing: border-box;
-}
+
+   h1 {
+     display: block;
+      font-family: 'Zen Dots', cursive;
+       font-size: 2em;
+       font-weight: light;
+       text-align:center;
+       line-height: .75;
+       color: rgb(241, 200, 166);
+       position: fixed;
+       width:100%;
+       top: 20px;
+       /* transform: translateY(-50%); */
+       left:0;
+
+   }
+
+   a {
+       text-decoration: none;
+   }
+   a:link, a:visited {
+        color: rgb(224, 209, 156);
+   }
+   a:hover {
+       color: rgb(185, 153, 124);
+   }
+   body {
+    font-family: 'Inconsolata', monospace;
+   font-size: 18px;
+   margin:0;
+   color: rgb(222, 207, 175);
+   /* background-image: url(3.jpg); */
+   }
+
+   img {
+     max-width: 100%;
+   }
 
 
-body {
-    margin: 0;
-}
 
-.flex {
-width: 100%;
-height: 100vh;
-display: flex;
-justify-content: space-around;
-align-items: center;
-background: rgb(116, 218, 154);
+   #info {
 
-}
+     /* display:  none; */
+     padding: 15px 0 0 15px;
+     align-self: start;
+   }
+   .hidden {
+     display: none;
+   }
 
-.circle {
-width: 20vw;
-height: 20vw;
-background: rgb(122, 112, 230);
-border-radius: 50%;
-/* animation-name: pulse; */
-/* animation-duration: 1s; */
-/* animation-iteration-count:infinite; */
-/* animation-direction: alternate; */
-animation: pulse 1s infinite alternate;
-}
+   .info-btn {
+   			margin-top: 40px;
+   			padding: 25px;
+   			cursor: pointer;
+   			border-radius: 10%;
+   		    width: min-content;
+          color: rgb(224, 209, 156);
+          font-family: 'Zen Dots', cursive;
+   		}
 
-.square {
-width: 20vw;
-height: 20vw;
-background: rgb(215, 166, 196);
-animation: spin 4s infinite linear;
-/* animation-timing-function: linear; */
+   		.info-btn:hover{
+   			color: rgb(185, 153, 124);
+   		  transition: .5s ease;
+   		  border: 2px double rgb(170, 56, 14);
+   		}
 
-}
 
-.runner {
-  width: 20vw;
-  height: 3vw;
-  background: rgb(51, 29, 97);
-  position: fixed;
-  bottom: 0;
-  left: -20vw;
-  animation: run 2s infinite;
-}
+      .fade-btn {
+           margin-top: 40px;
+           padding: 25px;
+           cursor: pointer;
+           border-radius: 10%;
+             width: min-content;
+             color: rgb(235, 236, 184);
+             font-family: 'Zen Dots', cursive;
+         }
 
-@keyframes pulse {
-0% {
-  transform: scale(1);
-  background: rgb(232, 182, 217);
-}
-100% {
-  transform: scale(1.5);
-  background: rgb(149, 186, 224);
-}
-}
+         .fade-btn:hover{
+           color: rgb(199, 226, 183);;
+           transition: .5s ease;
+           border: 2px double rgb(217, 195, 1);
+         }
 
-@keyframes spin {
-0% {
-  transform: rotate(0);
-  display: block;
-}
 
-100% {
-    transform: rotate(360deg);
-    display: none;
-}
-}
+         .book-btn {
+              margin-top: 40px;
+              padding: 25px;
+              cursor: pointer;
+              border-radius: 10%;
+                width: min-content;
+                color: rgb(104, 182, 114);
+                font-family: 'Zen Dots', cursive;
+            }
 
-@keyframes run {
-  0% {
-    transform: translateX(-40vw);
-  }
-  100% {
-    transform: translateX(120vw);
-  }
+            .book-btn:hover{
+              color: rgb(221, 145, 75);
+              transition: .5s ease;
+              border: 2px double rgb(14, 87, 26);
+            }
+   #myVideo {
+   position: fixed;
+   right: 0;
+   bottom: 0;
+   min-width: 100%;
+   min-height: 100%;
+   }
 
-}
+   .content {
+   position: fixed;
+   bottom: 15;
+   background-color: inherit;
+   width: 100%;
+   padding: 10px;
+   }
+
+   #myBtn {
+      color: rgb(224, 209, 156);
+      margin-top: 0px;
+      padding: 25px;
+      cursor: pointer;
+      border-radius: 10%;
+        width: min-content;
+    font-family: 'Zen Dots', cursive;
+      border: transparent;
+      justify-self: center;
+        background-color: inherit;
+    }
+
+
+   .book-container {
+     width: 100%;
+     height: 100vh;
+     background-color: rgb(230, 229, 190);
+     display: flex;
+   }
+
+   .book-left {
+     width: 50%;
+     height: 100%;
+     overflow-y: scroll;
+     border-right: 1px solid;
+
+   }
+
+   .book-right {
+     width: 50%;
+     height: 100%;
+     overflow-y: scroll;
+
+   }
+
+   .page {
+     background-color: rgb(198, 21, 10);
+     width:100%;
+     height:100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+   }
+
+   .page img {
+     /* max-width: 80%; */
+   }
+
+   .p2 {
+     transform: translate(25%, 45%);
+     max-width: 10%;
+   }

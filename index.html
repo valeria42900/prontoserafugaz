@@ -1,21 +1,66 @@
-  <!DOCTYPE html>
-  <html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>pronto ser&aacute;  fugaz</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="favicon.png" href="favicon.png"/>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
 
-  <head>
-    <title> animate! </title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-  </head>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300&family=Padauk&family=Zen+Dots&display=swap" rel="stylesheet">
 
-  <body>
+<link rel="stylesheet" href="main.css">
+<style>
+</style>
+</head>
+<body>
 
-<div class="flex">
-  <div class="circle"> </div>
-  <div class="square"> </div>
+<video autoplay muted loop id="myVideo">
+<source src="home2.mp4" type="video/mp4">
+</video>
+
+<div class="content">
+<h1>pronto ser&aacute; fugaz</h1>
+<p class="info-btn" onclick="toggle()">about</p>
+<p id="info" class="hidden">   A digital archive space for the photo-book Pronto Ser&aacute; Fugaz, created by Valeria Moreno. 
+
+
+ </p>
+<p class="fade-btn"><a href="book/index.html">book</a></p>
+<p class="book-btn"><a href="fade/index.html">come fade away</a></p>
+
+<button id="myBtn" onclick="myFunction()">pause for a moment</button>
+
+
 </div>
 
-  <div class="runner"> </div>
-  </body>
+<script>
+function toggle() {
+    // element = #box
+var info = document.getElementById("info");
+info.classList.toggle("hidden");
 
-  </htmL>
+}
+</script>
+
+
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "pause for a moment";
+  } else {
+    video.pause();
+    btn.innerHTML = "enjoy";
+  }
+}
+</script>
+
+
+</body>
+</html>
